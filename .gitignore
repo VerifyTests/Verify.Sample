@@ -7,3 +7,5 @@
 
 # Visual Studio
 .vs/
+
+*.received.*

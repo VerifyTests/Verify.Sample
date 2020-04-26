@@ -1,0 +1,26 @@
+[
+  {
+    Id: Guid_1,
+    GivenNames: 'Emmy',
+    FamilyName: 'Annachiara',
+    DateOfBirth: DateTime_1,
+    Age: 20,
+    Address: {
+      Street: '924 Jehovah Drive',
+      City: 'Strasburg',
+      State: 'Virginia'
+    }
+  },
+  {
+    Id: Guid_2,
+    GivenNames: 'Javed',
+    FamilyName: 'Sargis',
+    DateOfBirth: DateTime_2,
+    Age: 25,
+    Address: {
+      Street: '1587 Elliott Street',
+      City: 'Manchester',
+      State: 'New Hampshire'
+    }
+  }
+]

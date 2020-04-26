@@ -6,6 +6,7 @@ class Person
     public string GivenNames { get; }
     public string FamilyName { get; }
     public DateTime DateOfBirth { get; }
+    public int Age { get; }
     public Address Address { get; }
 
     public Person(
@@ -13,12 +14,14 @@ class Person
         string givenNames,
         string familyName,
         DateTime dateOfBirth,
+        int age,
         Address address)
     {
         Id = id;
         GivenNames = givenNames;
         FamilyName = familyName;
         DateOfBirth = dateOfBirth;
+        Age = age;
         Address = address;
     }
 }

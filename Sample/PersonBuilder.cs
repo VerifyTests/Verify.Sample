@@ -11,6 +11,7 @@ static class PersonBuilder
             givenNames: "Emmy",
             familyName: "Annachiara",
             dateOfBirth: new DateTime(2000, 1, 2, 3, 0, 0),
+            age: 20,
             address: new Address(
                 street: "924 Jehovah Drive",
                 city: "Strasburg",
@@ -20,6 +21,7 @@ static class PersonBuilder
             givenNames: "Javed",
             familyName: "Sargis",
             dateOfBirth: new DateTime(1998, 4, 2, 5, 0, 0),
+            age: 25,
             address: new Address(
                 street: "1587 Elliott Street",
                 city: "Manchester",
