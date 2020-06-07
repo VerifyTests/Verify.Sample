@@ -2,9 +2,10 @@
 using System.Linq;
 using Xunit;
 
+[TestFixture]
 public class PersonBuilderTests
 {
-    [Fact]
+    [Test]
     public void Find()
     {
         var id = new Guid("ebced679-45d3-4653-8791-3d969c4a986c");
@@ -21,7 +22,7 @@ public class PersonBuilderTests
         Assert.Equal("Virginia", address.State);
     }
 
-    [Fact]
+    [Test]
     public void FindAll()
     {
         var people = PersonBuilder.FindAll().ToList();
