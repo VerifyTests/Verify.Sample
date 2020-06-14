@@ -10,15 +10,15 @@ public class PersonBuilderTests
         var id = new Guid("ebced679-45d3-4653-8791-3d969c4a986c");
         var person = PersonBuilder.Find(id);
         Assert.NotNull(person);
-        Assert.AreEqual(id, person.Id);
-        Assert.AreEqual("Emmy", person.GivenNames);
-        Assert.AreEqual("Annachiara", person.FamilyName);
-        Assert.AreEqual(new DateTime(2000, 1, 2, 3, 0, 0), person.DateOfBirth);
+        Assert.Equal(id, person.Id);
+        Assert.Equal("Emmy", person.GivenNames);
+        Assert.Equal("Annachiara", person.FamilyName);
+        Assert.Equal(new DateTime(2000, 1, 2, 3, 0, 0), person.DateOfBirth);
         var address = person.Address;
         Assert.NotNull(address);
-        Assert.AreEqual("924 Jehovah Drive", address.Street);
-        Assert.AreEqual("Strasburg", address.City);
-        Assert.AreEqual("Virginia", address.State);
+        Assert.Equal("924 Jehovah Drive", address.Street);
+        Assert.Equal("Strasburg", address.City);
+        Assert.Equal("Virginia", address.State);
     }
 
     [Fact]
@@ -26,16 +26,16 @@ public class PersonBuilderTests
     {
         var people = PersonBuilder.FindAll().ToList();
         Assert.NotNull(people);
-        Assert.AreEqual(2, people.Count);
+        Assert.Equal(2, people.Count);
         var person0 = people[0];
         Assert.NotNull(person0);
-        Assert.AreEqual("Emmy", person0.GivenNames);
-        Assert.AreEqual("Annachiara", person0.FamilyName);
+        Assert.Equal("Emmy", person0.GivenNames);
+        Assert.Equal("Annachiara", person0.FamilyName);
         //TODO: assert other person0 properties
         var person1 = people[1];
         Assert.NotNull(person1);
-        Assert.AreEqual("Javed", person1.GivenNames);
-        Assert.AreEqual("Sargis", person1.FamilyName);
+        Assert.Equal("Javed", person1.GivenNames);
+        Assert.Equal("Sargis", person1.FamilyName);
         //TODO: assert other person1 properties
     }
 }
