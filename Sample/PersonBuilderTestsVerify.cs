@@ -1,24 +1,29 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using VerifyNUnit;
-using NUnit.Framework;
+using VerifyXunit;
+using Xunit;
+using Xunit.Abstractions;
 
-[TestFixture]
 public class PersonBuilderTestsVerify:VerifyBase
 {
-    [Test]
+    [Fact]
     public async Task Find()
     {
         var id = new Guid("ebced679-45d3-4653-8791-3d969c4a986c");
         var person = PersonBuilder.Find(id);
-        await Verifier.Verify(person);
+        await Verify(person);
     }
 
-    [Test]
+    [Fact]
     public async Task FindAll()
     {
         var people = PersonBuilder.FindAll().ToList();
-        await Verifier.Verify(people);
+        await Verify(people);
+    }
+
+    public PersonBuilderTestsVerify(ITestOutputHelper output) :
+        base(output)
+    {
     }
 }
