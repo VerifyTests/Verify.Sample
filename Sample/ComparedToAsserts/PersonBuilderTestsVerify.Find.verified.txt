@@ -1,12 +1,12 @@
 {
   Id: Guid_1,
-  GivenNames: 'Emmy',
-  FamilyName: 'Annachiara',
+  GivenNames: Emmy,
+  FamilyName: Annachiara,
   DateOfBirth: DateTime_1,
   Age: 20,
   Address: {
-    Street: '924 Jehovah Drive',
-    City: 'Strasburg',
-    State: 'Virginia'
+    Street: 924 Jehovah Drive,
+    City: Strasburg,
+    State: Virginia
   }
 }
