@@ -1,20 +1,16 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace BlazorServerApp
+public class Program
 {
-    public class Program
+    public static void Main()
     {
-        public static void Main(string[] args)
-        {
-            CreateHostBuilder(args).Build().Run();
-        }
+        CreateHostBuilder().Build().Run();
+    }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+    static IHostBuilder CreateHostBuilder()
+    {
+        var hostBuilder = Host.CreateDefaultBuilder();
+        return hostBuilder.ConfigureWebHostDefaults(_ => { _.UseStartup<Startup>(); });
     }
 }
