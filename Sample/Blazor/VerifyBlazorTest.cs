@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using BlazorWebApp.Pages;
 using VerifyTests.Blazor;
 using VerifyXunit;
 using Xunit;
@@ -8,13 +7,18 @@ using Xunit;
 public class VerifyBlazorTest
 {
     [Fact]
-    public async Task RenderCounter()
+    public Task RenderCounter_Web()
     {
-        var target = Render.Component<Counter>(
-            beforeRender: component =>
-            {
-                component.IncrementCount();
-            });
-        await Verifier.Verify(target);
+        var target = Render.Component<BlazorWebApp.Pages.Counter>(
+            beforeRender: component => { component.IncrementCount(); });
+        return Verifier.Verify(target);
+    }
+
+    [Fact]
+    public Task RenderCounter_Server()
+    {
+        var target = Render.Component<BlazorServerApp.Pages.Counter>(
+            beforeRender: component => { component.IncrementCount(); });
+        return Verifier.Verify(target);
     }
 }
