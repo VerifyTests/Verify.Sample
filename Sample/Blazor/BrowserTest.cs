@@ -4,12 +4,12 @@ using VerifyXunit;
 using Xunit;
 
 [UsesVerify]
-public class BlazorIntegrationTest :
+public class BrowserTest :
     IClassFixture<PlaywrightFixture>
 {
     IPage page;
 
-    public BlazorIntegrationTest(PlaywrightFixture fixture)
+    public BrowserTest(PlaywrightFixture fixture)
     {
         page = fixture.Page;
     }

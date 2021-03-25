@@ -19,5 +19,4 @@
     <PackageReference Include="Verify.BUnit" Version="6.7.0" />
     <ProjectReference Include="..\BlazorWebApp\BlazorWebApp.csproj" />
   </ItemGroup>
-
 </Project>
