@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using VerifyXunit;
 using Xunit;
@@ -10,18 +8,15 @@ public class ParamTest
 {
     [Theory]
     [MemberData(nameof(GetData))]
-    public Task Test(string file)
+    public Task Test(string value)
     {
-        var info = new FileInfo(file);
-        return Verifier.Verify(info.Length)
-            .UseParameters(Path.GetFileNameWithoutExtension(file));
+        return Verifier.Verify(value)
+            .UseParameters(value);
     }
 
     public static IEnumerable<object[]> GetData()
     {
-        foreach (var file in Directory.EnumerateFiles(Environment.CurrentDirectory, "*.yaml"))
-        {
-            yield return new object[] {file};
-        }
+        yield return new object[] {"Value1"};
+        yield return new object[] {"Value2"};
     }
 }
