@@ -17,7 +17,7 @@ public class BrowserTest :
     [Fact]
     public async Task RenderIndex()
     {
-        await page.GoToAsync("https://localhost:5001/");
+        await page.GoToAsync("http://localhost:5000/");
         await page.WaitForLoadStateAsync();
         await Verifier.Verify(page);
     }
