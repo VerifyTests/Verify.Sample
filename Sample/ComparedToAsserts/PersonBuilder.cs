@@ -4,9 +4,9 @@ using System.Linq;
 
 static class PersonBuilder
 {
-    static List<Person> people = new List<Person>
+    static List<Person> people = new()
     {
-        new Person(
+        new(
             id: new Guid("ebced679-45d3-4653-8791-3d969c4a986c"),
             givenNames: "Emmy",
             familyName: "Annachiara",
@@ -16,7 +16,7 @@ static class PersonBuilder
                 street: "924 Jehovah Drive",
                 city: "Strasburg",
                 state: "Virginia")),
-        new Person(
+        new(
             id: new Guid("7e6e1c62-92f2-4b64-8a85-988107458606"),
             givenNames: "Javed",
             familyName: "Sargis",
