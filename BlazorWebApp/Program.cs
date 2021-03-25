@@ -1,21 +1,13 @@
-using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Net.Http;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using BlazorWebApp;
 
-namespace BlazorWebApp
+class Program
 {
-    public class Program
+    static async Task Main()
     {
-        public static async Task Main(string[] args)
-        {
-            var builder = WebAssemblyHostBuilder.CreateDefault(args);
-            builder.RootComponents.Add<App>("#app");
-
-            builder.Services.AddScoped(_ => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
-            await builder.Build().RunAsync();
-        }
+        var builder = WebAssemblyHostBuilder.CreateDefault();
+        builder.RootComponents.Add<App>("#app");
+        await builder.Build().RunAsync();
     }
 }

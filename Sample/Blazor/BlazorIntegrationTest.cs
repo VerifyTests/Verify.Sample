@@ -18,7 +18,7 @@ public class BlazorIntegrationTest :
     public async Task RenderIndex()
     {
         await page.GoToAsync("https://localhost:5001/");
-        await page.WaitForLoadStateAsync(LifecycleEvent.Networkidle);
+        await page.WaitForLoadStateAsync();
         await Verifier.Verify(page);
     }
 }
