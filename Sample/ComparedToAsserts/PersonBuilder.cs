@@ -28,7 +28,7 @@ static class PersonBuilder
                 state: "New Hampshire"))
     };
 
-    public static Person Find(Guid id)
+    public static Person? Find(Guid id)
     {
         return people.SingleOrDefault(x => x.Id == id);
     }
