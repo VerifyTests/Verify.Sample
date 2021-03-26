@@ -23,9 +23,6 @@ public class VerifyBunitTest
         // the counter in the <p> element
         component.Find("button").Click();
 
-        // Assert: first find the <p> element, then verify its content
-        component.Find("p").MarkupMatches("<p>Current count: 1</p>");
-
         return Verifier.Verify(component);
     }
 

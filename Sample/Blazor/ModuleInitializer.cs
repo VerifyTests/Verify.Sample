@@ -16,8 +16,6 @@ public static class ModuleInitializer
         VerifierSettings.ScrubLinesContaining("<script src=\"_framework/dotnet.");
 
         VerifyPlaywright.Enable();
-        VerifyImageMagick.RegisterComparers(
-            threshold: .01,
-            metric: ErrorMetric.MeanAbsolute);
+        VerifyImageMagick.RegisterComparers(.01);
     }
 }
