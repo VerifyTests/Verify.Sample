@@ -13,12 +13,4 @@ public class VerifyBlazorTest
             beforeRender: component => { component.IncrementCount(); });
         return Verifier.Verify(target);
     }
-
-    [Fact]
-    public Task RenderCounter_Server()
-    {
-        var target = Render.Component<BlazorServerApp.Pages.Counter>(
-            beforeRender: component => { component.IncrementCount(); });
-        return Verifier.Verify(target);
-    }
 }

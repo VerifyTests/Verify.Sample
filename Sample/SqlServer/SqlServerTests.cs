@@ -1,4 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.IO;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using LocalDb;
 using Microsoft.Data.SqlClient;
 using Microsoft.SqlServer.Management.Common;
@@ -77,7 +80,13 @@ BEGIN
     RETURN @quantity * @list_price * (1 - @discount);
 END;");
                 return Task.CompletedTask;
-            });
+            },
+            timestamp: GetTimestamp());
+    }
+
+    static DateTime GetTimestamp([CallerFilePath] string path = "")
+    {
+        return File.GetLastWriteTime(path);
     }
 
     [Fact]

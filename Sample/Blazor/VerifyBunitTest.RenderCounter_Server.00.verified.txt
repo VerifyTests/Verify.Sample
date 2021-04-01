@@ -1,6 +1,0 @@
-{
-  Instance: {},
-  RenderCount: 2,
-  NodeCount: 3,
-  Bytes: 111
-}
