@@ -1,9 +1,11 @@
-﻿using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using System.Threading.Tasks;
 using PlaywrightSharp;
 using VerifyXunit;
 using Xunit;
 
 [UsesVerify]
+[Category("Integration")]
 public class BrowserTest :
     IClassFixture<PlaywrightFixture>
 {

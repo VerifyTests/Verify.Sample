@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using VerifyXunit;
 using Xunit;
 
 [UsesVerify]
+[Category("Integration")]
 public class SqlServerTests
 {
     static SqlInstance sqlInstance;
