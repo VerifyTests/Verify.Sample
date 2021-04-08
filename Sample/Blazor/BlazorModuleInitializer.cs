@@ -2,7 +2,7 @@
 using Verify.AngleSharp;
 using VerifyTests;
 
-public static class ModuleInitializer
+public static class BlazorModuleInitializer
 {
     [ModuleInitializer]
     public static void Initialize()
@@ -15,6 +15,5 @@ public static class ModuleInitializer
         VerifierSettings.ScrubLinesContaining("<script src=\"_framework/dotnet.");
 
         VerifyPlaywright.Enable();
-        VerifyImageMagick.RegisterComparers(.01);
     }
 }
