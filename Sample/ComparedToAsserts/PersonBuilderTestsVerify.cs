@@ -23,8 +23,8 @@ public class PersonBuilderTestsVerify
     {
         var id = new Guid("ebced679-45d3-4653-8791-3d969c4a986c");
         var person = PersonBuilder.Find(id)!;
-        Assert.Equal((DateTime.Now - person.DateOfBirth).TotalDays, person.Age.TotalDays, 1);
         await Verifier.Verify(person, verifySettings);
+        Assert.Equal((DateTime.Now - person.DateOfBirth).TotalDays, person.Age.TotalDays, 1);
     }
 
     [Fact]
