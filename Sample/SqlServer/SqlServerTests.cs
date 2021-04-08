@@ -17,13 +17,14 @@ public class SqlServerTests
 {
     static SqlInstance sqlInstance;
 
+    [ModuleInitializer]
+    public static void Initialize()
+    {
+        VerifySqlServer.Enable();
+    }
+
     static SqlServerTests()
     {
-        #region Enable
-
-        VerifySqlServer.Enable();
-
-        #endregion
 
         sqlInstance = new(
             "VerifySqlServer",
@@ -97,35 +98,24 @@ END;");
         await using var database = await sqlInstance.Build();
         var connection = database.Connection;
 
-        #region SqlServerSchema
-
         await Verifier.Verify(connection);
-
-        #endregion
     }
 
     [Fact]
     public async Task Recording()
     {
         await using var database = await sqlInstance.Build();
-        var connectionString = database.ConnectionString;
-
-        #region SqlRecording
 
         SqlRecording.StartRecording();
-        var value = await MethodUnderTest(connectionString);
+        var value = MethodUnderTest(database.Connection);
         await Verifier.Verify(value);
-
-        #endregion
     }
 
-    static async Task<int> MethodUnderTest(string connectionString)
+    static int MethodUnderTest(SqlConnection connection)
     {
-        await using SqlConnection connection = new(connectionString);
-        await connection.OpenAsync();
-        await using var command = connection.CreateCommand();
+        using var command = connection.CreateCommand();
         command.CommandText = "select Value from MyTable";
-        var value = await command.ExecuteScalarAsync();
+        var value = command.ExecuteScalar();
         return (int)value!;
     }
 }
