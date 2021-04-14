@@ -8,6 +8,6 @@ public static class ModuleInitializer
     {
         VerifyXaml.Enable();
 
-        VerifyImageMagick.RegisterComparers(.01);
+        VerifyImageMagick.RegisterComparers(.02);
     }
 }
