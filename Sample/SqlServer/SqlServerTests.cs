@@ -25,7 +25,6 @@ public class SqlServerTests
 
     static SqlServerTests()
     {
-
         sqlInstance = new(
             "VerifySqlServer",
             connection =>
