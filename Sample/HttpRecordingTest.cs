@@ -14,12 +14,7 @@ public class HttpRecordingTest
 
         var sizeOfResponse = await MethodThatDoesHttpCalls();
 
-        await Verifier.Verify(sizeOfResponse)
-            .ModifySerialization(_ =>
-            {
-                //scrub some headers that are not consistent between test runs
-                _.IgnoreMembers("traceparent", "Date");
-            });
+        await Verifier.Verify(sizeOfResponse);
     }
 
     static async Task<int> MethodThatDoesHttpCalls()

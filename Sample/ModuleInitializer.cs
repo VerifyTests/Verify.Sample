@@ -7,5 +7,16 @@ public static class ModuleInitializer
     public static void Initialize()
     {
         VerifyImageMagick.RegisterComparers(.01);
+
+        VerifierSettings.ModifySerialization(settings =>
+        {
+            settings.IgnoreMembers(
+                "traceparent",
+                "Traceparent",
+                "X-Amzn-Trace-Id",
+                "origin",
+                "Content-Length",
+                "TrailingHeaders");
+        });
     }
 }
