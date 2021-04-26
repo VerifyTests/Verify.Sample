@@ -11,12 +11,14 @@ public class HttpResponseTest
     [ModuleInitializer]
     public static void Init()
     {
-        VerifierSettings.ScrubLinesContaining(
-            "Traceparent",
-            "X-Amzn-Trace-Id",
-            "origin",
-            "Content-Length",
-            "TrailingHeaders");
+        VerifierSettings.ModifySerialization(settings =>
+        {
+            settings.IgnoreMembers("Traceparent",
+                "X-Amzn-Trace-Id",
+                "origin",
+                "Content-Length",
+                "TrailingHeaders");
+        });
     }
 
     [Fact]
