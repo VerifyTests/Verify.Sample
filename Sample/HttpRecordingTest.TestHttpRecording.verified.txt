@@ -1,4 +1,4 @@
-{
+﻿{
   target: 951,
   httpCalls: [
     {
@@ -6,12 +6,10 @@
       RequestHeaders: {},
       ResponseHeaders: {
         Access-Control-Allow-Credentials: true,
-        Access-Control-Allow-Origin: *,
         Connection: keep-alive,
         Server: gunicorn/19.9.0
       },
       ResponseContentHeaders: {
-        Content-Length: 429,
         Content-Type: application/json
       },
       ResponseContentString: 
@@ -42,12 +40,10 @@
       RequestHeaders: {},
       ResponseHeaders: {
         Access-Control-Allow-Credentials: true,
-        Access-Control-Allow-Origin: *,
         Connection: keep-alive,
         Server: gunicorn/19.9.0
       },
       ResponseContentHeaders: {
-        Content-Length: 522,
         Content-Type: application/xml
       },
       ResponseContentString: 
