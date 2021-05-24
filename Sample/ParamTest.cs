@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using VerifyXunit;
 using Xunit;
 
@@ -7,16 +6,11 @@ using Xunit;
 public class ParamTest
 {
     [Theory]
-    [MemberData(nameof(GetData))]
+    [InlineData("Value1")]
+    [InlineData("Value2")]
     public Task Test(string value)
     {
         return Verifier.Verify(value)
             .UseParameters(value);
-    }
-
-    public static IEnumerable<object[]> GetData()
-    {
-        yield return new object[] {"Value1"};
-        yield return new object[] {"Value2"};
     }
 }
