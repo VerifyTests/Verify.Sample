@@ -1,11 +1,10 @@
-﻿using System.ComponentModel;
+﻿#if(DEBUG)
 using System.Threading.Tasks;
 using PlaywrightSharp;
 using VerifyXunit;
 using Xunit;
 
 [UsesVerify]
-[Category("Integration")]
 public class BrowserTest :
     IClassFixture<PlaywrightFixture>
 {
@@ -33,3 +32,4 @@ public class BrowserTest :
         await Verifier.Verify(element);
     }
 }
+#endif
