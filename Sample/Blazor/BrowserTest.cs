@@ -1,6 +1,6 @@
 ﻿#if(DEBUG)
 using System.Threading.Tasks;
-using PlaywrightSharp;
+using Microsoft.Playwright;
 using VerifyXunit;
 using Xunit;
 
@@ -18,16 +18,16 @@ public class BrowserTest :
     [Fact]
     public async Task Index()
     {
-        await page.GoToAsync("http://localhost:5000/");
-        await page.WaitForLoadStateAsync(LifecycleEvent.Networkidle);
+        await page.GotoAsync("http://localhost:5000/");
+        await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
         await Verifier.Verify(page);
     }
 
     [Fact]
     public async Task Counter()
     {
-        await page.GoToAsync("http://localhost:5000/counter");
-        await page.WaitForLoadStateAsync(LifecycleEvent.Networkidle);
+        await page.GotoAsync("http://localhost:5000/counter");
+        await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
         var element = await page.QuerySelectorAsync(".content");
         await Verifier.Verify(element);
     }

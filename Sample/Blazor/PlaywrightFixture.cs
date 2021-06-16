@@ -1,8 +1,7 @@
 ﻿using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
-using PlaywrightSharp;
-using PlaywrightSharp.Chromium;
+using Microsoft.Playwright;
 using VerifyTests;
 using Xunit;
 
@@ -11,7 +10,7 @@ public class PlaywrightFixture :
 {
     IPlaywright? playwright;
     Process? process;
-    IChromiumBrowser? browser;
+    IBrowser? browser;
 
     public async Task InitializeAsync()
     {
@@ -21,8 +20,9 @@ public class PlaywrightFixture :
         browser = await playwright.Chromium.LaunchAsync();
 
         Page = await browser.NewPageAsync();
-        Page.ViewportSize.Height = 768;
-        Page.ViewportSize.Width = 1024;
+        var size = Page.ViewportSize!;
+        size.Height = 768;
+        size.Width = 1024;
     }
 
     public IPage Page { get; private set; } = null!;
