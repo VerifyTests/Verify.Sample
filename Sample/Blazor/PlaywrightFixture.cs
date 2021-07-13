@@ -30,7 +30,7 @@ public class PlaywrightFixture :
     void StartBlazorApp()
     {
         var projectDir = Path.Combine(AttributeReader.GetSolutionDirectory(), "BlazorWebApp");
-        ProcessStartInfo startInfo = new("dotnet", "run --no-build --no-restore")
+        var startInfo = new ProcessStartInfo("dotnet", "run --no-build --no-restore")
         {
             WorkingDirectory = projectDir
         };

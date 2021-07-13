@@ -28,7 +28,7 @@ public class SqlServerTests
             connection =>
             {
                 var sqlConnection = (SqlConnection) connection;
-                Server server = new(new ServerConnection(sqlConnection));
+                var server = new Server(new ServerConnection(sqlConnection));
                 server.ConnectionContext.ExecuteNonQuery(@"
 CREATE TABLE
 MyTable(Value int);

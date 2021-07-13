@@ -15,7 +15,7 @@ public class PersonBuilderTests
         Assert.Equal("Annachiara", person.FamilyName);
         Assert.Equal("Emmy Annachiara (ebced679-45d3-4653-8791-3d969c4a986c)", person.Description);
 
-        Assert.Equal(new DateTime(2000, 1, 2, 3, 0, 0), person.DateOfBirth);
+        Assert.Equal(new(2000, 1, 2, 3, 0, 0), person.DateOfBirth);
         Assert.Equal((DateTime.Now - person.DateOfBirth).TotalDays, person.Age.TotalDays, 1);
 
         var address = person.Address;

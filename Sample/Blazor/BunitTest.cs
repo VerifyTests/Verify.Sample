@@ -8,7 +8,7 @@ public class BunitTest
     public void RenderCounter_Web()
     {
         // Arrange: render the Counter.razor component
-        using TestContext context = new();
+        using var context = new TestContext();
         var component = context.RenderComponent<Counter>();
 
         // Act: find and click the <button> element to increment

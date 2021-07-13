@@ -11,7 +11,7 @@ public class TheTests
     [Test]
     public async Task WindowUsage()
     {
-        MyWindow window = new();
+        var window = new MyWindow();
         await Verifier.Verify(window);
     }
 }

@@ -12,7 +12,7 @@ public class PersonBuilderTestsVerify
 
     static PersonBuilderTestsVerify()
     {
-        verifySettings = new VerifySettings();
+        verifySettings = new();
         verifySettings.ScrubInlineGuids();
         verifySettings.ModifySerialization(
             settings => settings.IgnoreMember<Person>(target => target.Age));
