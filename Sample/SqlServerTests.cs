@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -12,7 +11,6 @@ using VerifyXunit;
 using Xunit;
 
 [UsesVerify]
-[Category("Integration")]
 public class SqlServerTests
 {
     static SqlInstance sqlInstance;
@@ -92,6 +90,7 @@ END;");
     }
 
     [Fact]
+    [Trait("Category", "Integration")]
     public async Task SqlServerSchema()
     {
         await using var database = await sqlInstance.Build();
@@ -101,6 +100,7 @@ END;");
     }
 
     [Fact]
+    [Trait("Category", "Integration")]
     public async Task Recording()
     {
         await using var database = await sqlInstance.Build();
