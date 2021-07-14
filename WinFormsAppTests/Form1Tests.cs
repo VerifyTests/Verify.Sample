@@ -7,6 +7,7 @@ using SimpleCalculator;
 public class Form1Tests
 {
     [Test]
+    //TODO: Make this STA
     public Task FormUsage()
     {
         var form = new Form1();
