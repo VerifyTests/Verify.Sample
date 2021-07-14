@@ -8,7 +8,7 @@ public class PersonBuilderTests
     public void Find()
     {
         var id = new Guid("ebced679-45d3-4653-8791-3d969c4a986c");
-        var person = PersonBuilder.Find(id);
+        var person = PersonBuilder.Find(id)!;
         Assert.NotNull(person);
         Assert.Equal(id, person.Id);
         Assert.Equal("Emmy", person.GivenNames);

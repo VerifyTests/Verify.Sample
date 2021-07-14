@@ -16,7 +16,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebApp", "BlazorWebAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppTests", "WpfAppTests\WpfAppTests.csproj", "{295D2E6E-A229-4B41-9058-9DD9A6B2A9DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{110B0C51-63F3-4144-A955-E285295FC9A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp", "WpfApp\WpfApp.csproj", "{110B0C51-63F3-4144-A955-E285295FC9A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp", "WinFormsApp\WinFormsApp.csproj", "{BD111813-4479-4ECC-94FE-BED8F5980BA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsAppTests", "WinFormsAppTests\WinFormsAppTests.csproj", "{663B97F3-D282-4F13-979A-206B42109A28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +44,14 @@ Global
 		{110B0C51-63F3-4144-A955-E285295FC9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{110B0C51-63F3-4144-A955-E285295FC9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{110B0C51-63F3-4144-A955-E285295FC9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD111813-4479-4ECC-94FE-BED8F5980BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD111813-4479-4ECC-94FE-BED8F5980BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD111813-4479-4ECC-94FE-BED8F5980BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD111813-4479-4ECC-94FE-BED8F5980BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{663B97F3-D282-4F13-979A-206B42109A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663B97F3-D282-4F13-979A-206B42109A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663B97F3-D282-4F13-979A-206B42109A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663B97F3-D282-4F13-979A-206B42109A28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
