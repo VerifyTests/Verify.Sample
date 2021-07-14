@@ -1,4 +1,6 @@
-﻿namespace SimpleCalculator
+﻿using System.Drawing;
+
+namespace SimpleCalculator
 {
     partial class Form1
     {
@@ -225,6 +227,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor =  Color.FloralWhite;
             this.panel1.Location = new System.Drawing.Point(3, 7);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
             this.panel1.Name = "panel1";
