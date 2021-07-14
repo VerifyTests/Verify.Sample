@@ -29,7 +29,8 @@ isSame-- Same --> passTest
 isSame-- Different --> failTest
 ```
 
- * install DiffEngineTray dotnet tool install --global DiffEngineTray --version 6.9.1
+ * install DiffEngineTray
+   dotnet tool install --global DiffEngineTray --version 6.9.1
  * install a DiffTool
  * Demo WinFormsAppTests from scratch
  * Nested files
