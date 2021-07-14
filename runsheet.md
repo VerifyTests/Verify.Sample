@@ -41,6 +41,7 @@ isSame-- Different --> failTest
 Snapshot testing leverage serialization. Converting a UI to an image is a form of serialization. The same serialization approach can be applied to any data.
 
  * Demo: Convert PersonBuilderTests.cs to snapshot testing
+ * Scrubbers:
  * Demo: Sql Schema, Anything can be serialized
 
 
