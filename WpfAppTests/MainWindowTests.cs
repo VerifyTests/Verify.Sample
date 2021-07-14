@@ -1,17 +1,17 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Tests;
 using VerifyNUnit;
 using NUnit.Framework;
+using WpfApp;
 
 [Apartment(ApartmentState.STA)]
 [TestFixture]
-public class TheTests
+public class MainWindowTests
 {
     [Test]
     public async Task WindowUsage()
     {
-        var window = new MyWindow();
+        var window = new MainWindow();
         await Verifier.Verify(window);
     }
 }

@@ -14,7 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample", "Sample\Sample.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebApp", "BlazorWebApp\BlazorWebApp.csproj", "{70C0A536-4FE1-437D-A30E-329CBF13C6DD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamlTests", "XamlTests\XamlTests.csproj", "{295D2E6E-A229-4B41-9058-9DD9A6B2A9DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppTests", "WpfAppTests\WpfAppTests.csproj", "{295D2E6E-A229-4B41-9058-9DD9A6B2A9DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{110B0C51-63F3-4144-A955-E285295FC9A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,10 @@ Global
 		{295D2E6E-A229-4B41-9058-9DD9A6B2A9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{295D2E6E-A229-4B41-9058-9DD9A6B2A9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{295D2E6E-A229-4B41-9058-9DD9A6B2A9DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110B0C51-63F3-4144-A955-E285295FC9A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110B0C51-63F3-4144-A955-E285295FC9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110B0C51-63F3-4144-A955-E285295FC9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110B0C51-63F3-4144-A955-E285295FC9A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

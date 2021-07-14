@@ -7,7 +7,5 @@ public static class ModuleInitializer
     public static void Initialize()
     {
         VerifyXaml.Enable();
-
-        VerifyImageMagick.RegisterComparers(.02);
     }
 }

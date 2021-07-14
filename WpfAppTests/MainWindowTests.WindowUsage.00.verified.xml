@@ -1,4 +1,4 @@
-<MyWindow Title="MyWindow" Width="525" Height="350" xmlns="clr-namespace:Tests;assembly=XamlTests" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+﻿<MainWindow Title="MainWindow" Width="525" Height="350" xmlns="clr-namespace:WpfApp;assembly=WpfApp" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <av:DockPanel Background="#FFF0FFFF" Name="MyPanel">
     <av:Menu Height="26" av:DockPanel.Dock="Top">
       <av:MenuItem Header="File">
@@ -62,4 +62,4 @@
       <av:TextBox Name="PaperBox" Margin="5,5,5,5" av:Grid.Row="1" av:Grid.ColumnSpan="3" av:Grid.RowSpan="5" xml:space="preserve" />
     </av:Grid>
   </av:DockPanel>
-</MyWindow>
+</MainWindow>
