@@ -47,7 +47,6 @@
             this.btn0 = new System.Windows.Forms.Button();
             this.btnBkpSpace = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtResult = new System.Windows.Forms.TextBox();
             this.btnPoint = new System.Windows.Forms.Button();
             this.btnModules = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -226,23 +225,11 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txtResult);
             this.panel1.Location = new System.Drawing.Point(3, 7);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(253, 38);
             this.panel1.TabIndex = 20;
-            // 
-            // txtResult
-            // 
-            this.txtResult.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtResult.Enabled = false;
-            this.txtResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResult.Location = new System.Drawing.Point(3, 8);
-            this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(245, 19);
-            this.txtResult.TabIndex = 19;
             // 
             // btnPoint
             // 
@@ -324,6 +311,5 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnPoint;
         private System.Windows.Forms.Button btnModules;
-        private System.Windows.Forms.TextBox txtResult;
     }
 }
