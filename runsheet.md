@@ -29,7 +29,7 @@ isSame-- Same --> passTest
 isSame-- Different --> failTest
 ```
 
- * install DiffEngineTray
+ * install DiffEngineTray dotnet tool install --global DiffEngineTray --version 6.9.1
  * install a DiffTool
  * Demo WinFormsAppTests from scratch
  * Nested files
@@ -39,7 +39,6 @@ isSame-- Different --> failTest
 # Snapshot is Serialization
 
 Snapshot testing leverage serialization. Converting a UI to an image is a form of serialization. The same serialization approach can be applied to any data.
-
 
  * Demo: Convert PersonBuilderTests.cs to snapshot testing
  * Demo: Sql Schema, Anything can be serialized
