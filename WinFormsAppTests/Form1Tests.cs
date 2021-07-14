@@ -1,16 +1,17 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 using VerifyNUnit;
 using NUnit.Framework;
 using SimpleCalculator;
 
 [TestFixture]
+[Apartment(ApartmentState.STA)]
 public class Form1Tests
 {
     [Test]
-    //TODO: Make this STA
-    public Task FormUsage()
+    public async Task FormUsage()
     {
         var form = new Form1();
-        return Verifier.Verify(form);
+        await Verifier.Verify(form);
     }
 }
