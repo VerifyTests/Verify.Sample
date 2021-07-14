@@ -9,7 +9,7 @@ At any time ask questions
 # Traditional Snapshot
 
 ```mermaid
-graph TD
+graph LR
 run(Run test and<br/>create Received file)
 hasSnapshot{Has existing<br/>Verified file?}
 hasSnapshot-- No -->failTest
@@ -24,7 +24,7 @@ shouldAccept-- No -->discard
 
 isSame{Compare Verified<br/>to Received}
 hasSnapshot-- Yes -->isSame
-passTest(Pass Test and discard Received)
+passTest(Pass Test and<br/>discard Received)
 isSame-- Same --> passTest
 isSame-- Different --> failTest
 ```
