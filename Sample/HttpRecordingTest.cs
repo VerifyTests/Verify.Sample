@@ -1,6 +1,6 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
-using VerifyTests;
+using VerifyTests.Http;
 using VerifyXunit;
 using Xunit;
 
