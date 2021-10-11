@@ -15,7 +15,6 @@
     Method: {
       Method: GET
     },
-    RequestUri: https://httpbin.org/image/png,
-    Headers: {}
+    Uri: https://httpbin.org/image/png
   }
 }
