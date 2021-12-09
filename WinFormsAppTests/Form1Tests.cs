@@ -1,8 +1,4 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using VerifyNUnit;
-using NUnit.Framework;
-using SimpleCalculator;
+﻿using SimpleCalculator;
 
 [TestFixture]
 [Apartment(ApartmentState.STA)]

@@ -1,8 +1,5 @@
 ﻿#if(DEBUG)
-using System.Threading.Tasks;
 using Microsoft.Playwright;
-using VerifyXunit;
-using Xunit;
 
 [UsesVerify]
 public class BrowserTest :

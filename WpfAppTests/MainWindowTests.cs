@@ -1,8 +1,4 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using VerifyNUnit;
-using NUnit.Framework;
-using WpfApp;
+﻿using WpfApp;
 
 [Apartment(ApartmentState.STA)]
 [TestFixture]

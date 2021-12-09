@@ -1,14 +1,8 @@
-﻿using System;
-using System.IO;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
+﻿using System.Runtime.CompilerServices;
 using LocalDb;
 using Microsoft.Data.SqlClient;
 using Microsoft.SqlServer.Management.Common;
 using Microsoft.SqlServer.Management.Smo;
-using VerifyTests;
-using VerifyXunit;
-using Xunit;
 
 [UsesVerify]
 public class SqlServerTests

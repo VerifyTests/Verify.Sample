@@ -1,5 +1,4 @@
 ﻿using System.Runtime.CompilerServices;
-using VerifyTests;
 
 public static class ModuleInitializer
 {

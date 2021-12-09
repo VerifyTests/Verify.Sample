@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace SimpleCalculator
+﻿namespace SimpleCalculator
 {
     public partial class Form1 : Form
     {

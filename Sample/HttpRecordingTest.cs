@@ -1,8 +1,4 @@
-﻿using System.Net.Http;
-using System.Threading.Tasks;
-using VerifyTests.Http;
-using VerifyXunit;
-using Xunit;
+﻿using VerifyTests.Http;
 
 [UsesVerify]
 public class HttpRecordingTest

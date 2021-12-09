@@ -1,8 +1,4 @@
-﻿using System.Threading.Tasks;
-using VerifyXunit;
-using Xunit;
-
-[UsesVerify]
+﻿[UsesVerify]
 public class ParamTest
 {
     [Theory]

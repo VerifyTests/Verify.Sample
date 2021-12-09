@@ -1,11 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Threading.Tasks;
-using VerifyTests;
-using VerifyXunit;
-using Xunit;
-
-[UsesVerify]
+﻿[UsesVerify]
 public class PersonBuilderTestsVerify
 {
     static VerifySettings verifySettings;

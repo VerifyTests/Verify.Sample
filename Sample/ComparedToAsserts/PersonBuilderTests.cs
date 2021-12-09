@@ -1,8 +1,4 @@
-﻿using System;
-using System.Linq;
-using Xunit;
-
-public class PersonBuilderTests
+﻿public class PersonBuilderTests
 {
     [Fact]
     public void Find()

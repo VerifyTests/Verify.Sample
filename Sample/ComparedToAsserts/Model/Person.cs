@@ -1,6 +1,4 @@
-﻿using System;
-
-record Person(
+﻿record Person(
     Guid Id,
     string GivenNames,
     string FamilyName,

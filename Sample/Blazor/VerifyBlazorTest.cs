@@ -1,8 +1,5 @@
-﻿using System.Threading.Tasks;
-using BlazorWebApp.Pages;
+﻿using BlazorWebApp.Pages;
 using VerifyTests.Blazor;
-using VerifyXunit;
-using Xunit;
 
 [UsesVerify]
 public class VerifyBlazorTest

@@ -1,9 +1,4 @@
-﻿using System.Net.Http;
-using System.Threading.Tasks;
-using VerifyXunit;
-using Xunit;
-
-[UsesVerify]
+﻿[UsesVerify]
 public class HttpResponseTest
 {
     static HttpClient client = new();

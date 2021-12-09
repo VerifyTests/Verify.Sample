@@ -1,8 +1,4 @@
-﻿using System.Threading.Tasks;
-using Bunit;
-using VerifyTests;
-using VerifyXunit;
-using Xunit;
+﻿using Bunit;
 
 [UsesVerify]
 public class VerifyBunitTest

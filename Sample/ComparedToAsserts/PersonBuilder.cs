@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-class PersonBuilder
+﻿class PersonBuilder
 {
     public static List<Person> People = new()
     {
