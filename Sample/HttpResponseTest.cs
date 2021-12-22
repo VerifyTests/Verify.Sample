@@ -8,7 +8,7 @@ public class HttpResponseTest
     {
         var result = await client.GetAsync("https://httpbin.org/image/png");
 
-        await Verifier.Verify(result);
+        await Verify(result);
     }
 
     [Fact]
@@ -16,6 +16,6 @@ public class HttpResponseTest
     {
         var result = await client.GetAsync("https://httpbin.org/get");
 
-        await Verifier.Verify(result);
+        await Verify(result);
     }
 }

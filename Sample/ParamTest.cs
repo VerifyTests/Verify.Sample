@@ -6,7 +6,7 @@ public class ParamTest
     [InlineData("Value2")]
     public Task Test(string value)
     {
-        return Verifier.Verify(value)
+        return Verify(value)
             .UseParameters(value);
     }
 }

@@ -16,7 +16,7 @@ public class PersonBuilderTestsVerify
     {
         var id = new Guid("ebced679-45d3-4653-8791-3d969c4a986c");
         var person = PersonBuilder.Find(id)!;
-        await Verifier.Verify(person, verifySettings);
+        await Verify(person, verifySettings);
         Assert.Equal((DateTime.Now - person.DateOfBirth).TotalDays, person.Age.TotalDays, 1);
     }
 
@@ -24,6 +24,6 @@ public class PersonBuilderTestsVerify
     public async Task FindAll()
     {
         var people = PersonBuilder.FindAll().ToList();
-        await Verifier.Verify(people, verifySettings);
+        await Verify(people, verifySettings);
     }
 }

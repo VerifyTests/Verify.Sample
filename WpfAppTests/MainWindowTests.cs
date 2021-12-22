@@ -8,6 +8,6 @@ public class MainWindowTests
     public async Task WindowUsage()
     {
         var window = new MainWindow();
-        await Verifier.Verify(window);
+        await Verify(window);
     }
 }

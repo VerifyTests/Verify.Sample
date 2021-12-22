@@ -18,7 +18,7 @@ public class BrowserTest :
     {
         await page.GotoAsync("http://localhost:5000/");
         await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
-        await Verifier.Verify(page);
+        await Verify(page);
     }
 
     [Fact]
@@ -28,7 +28,7 @@ public class BrowserTest :
         await page.GotoAsync("http://localhost:5000/counter");
         await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
         var element = await page.QuerySelectorAsync(".content");
-        await Verifier.Verify(element);
+        await Verify(element);
     }
 }
 #endif
