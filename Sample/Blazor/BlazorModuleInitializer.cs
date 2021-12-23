@@ -1,5 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
-using Verify.AngleSharp;
+using VerifyTests.AngleSharp;
 
 public static class BlazorModuleInitializer
 {
