@@ -7,7 +7,7 @@
   <ItemGroup>
     <PackageReference Include="LocalDb" Version="12.0.0" />
     <PackageReference Include="Microsoft.Playwright" Version="1.17.3" />
-    <PackageReference Include="Verify.Http" Version="1.1.1" />
+    <PackageReference Include="Verify.Http" Version="1.1.2" />
     <PackageReference Include="Verify.SqlServer" Version="3.0.0" />
     <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
