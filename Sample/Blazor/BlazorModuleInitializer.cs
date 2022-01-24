@@ -13,6 +13,6 @@ public static class BlazorModuleInitializer
         HtmlPrettyPrint.All();
         VerifierSettings.ScrubLinesContaining("<script src=\"_framework/dotnet.");
 
-        VerifyPlaywright.Enable();
+        VerifyPlaywright.Enable(installPlaywright: true);
     }
 }

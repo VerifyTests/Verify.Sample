@@ -18,6 +18,7 @@ public class BrowserTest :
     {
         await page.GotoAsync("http://localhost:5000/");
         await page.WaitForLoadStateAsync(LoadState.NetworkIdle);
+        await page.QuerySelectorAsync(".page");
         await Verify(page);
     }
 
