@@ -1,5 +1,5 @@
 ﻿using Bunit;
-using BlazorWebApp.Pages;
+using Counter = BlazorWebApp.Pages.Counter;
 
 public class BunitTest
 {

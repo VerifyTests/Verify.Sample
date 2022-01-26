@@ -1,5 +1,6 @@
 ﻿using BlazorWebApp.Pages;
 using VerifyTests.Blazor;
+using Counter = BlazorWebApp.Pages.Counter;
 
 [UsesVerify]
 public class VerifyBlazorTest
