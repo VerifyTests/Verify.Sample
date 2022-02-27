@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Components;
 
-namespace BlazorWebApp
+namespace BlazorWebApp;
+
+public partial class App : ComponentBase
 {
-    public partial class App : ComponentBase
-    {
-    }
 }

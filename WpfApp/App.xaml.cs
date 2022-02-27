@@ -1,8 +1,7 @@
 ﻿using System.Windows;
 
-namespace WpfApp
+namespace WpfApp;
+
+public partial class App : Application
 {
-    public partial class App : Application
-    {
-    }
 }
