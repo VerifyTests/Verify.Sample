@@ -11,6 +11,6 @@ public class ImageSharpTests
         {
             [5, 5] = Rgba32.ParseHex("#00000F")
         };
-        return Verify(image).UseExtension("png");
+        return Verify(image);
     }
 }
