@@ -1,12 +1,9 @@
-# User-specific files
+*.suo
 *.user
-
-# Build results
-[Bb]in/
-[Oo]bj/
-
-# Visual Studio
+bin/
+obj/
 .vs/
-
-*.received.*
+*.DotSettings.user
 .idea/
+*.received.*
+nugets/
