@@ -11,12 +11,10 @@ public class SqlServerTests
 
     [ModuleInitializer]
     public static void Initialize()
-    {
-        VerifySqlServer.Enable();
-    }
+        => VerifySqlServer.Enable();
 
     static SqlServerTests()
-    {
+        =>
         sqlInstance = new(
             "VerifySqlServer",
             connection =>
@@ -76,12 +74,9 @@ END;");
                 return Task.CompletedTask;
             },
             timestamp: GetTimestamp());
-    }
 
     static DateTime GetTimestamp([CallerFilePath] string path = "")
-    {
-        return File.GetLastWriteTime(path);
-    }
+        => File.GetLastWriteTime(path);
 
     [Fact]
     [Trait("Category", "Integration")]
