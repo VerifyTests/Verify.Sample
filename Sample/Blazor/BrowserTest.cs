@@ -7,10 +7,8 @@ public class BrowserTest :
 {
     IPage page;
 
-    public BrowserTest(PlaywrightFixture fixture)
-    {
+    public BrowserTest(PlaywrightFixture fixture) =>
         page = fixture.Page;
-    }
 
     [Fact]
     [Trait("Category", "Integration")]

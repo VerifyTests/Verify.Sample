@@ -3,10 +3,8 @@
 [UsesVerify]
 public class VerifyBunitTest
 {
-    static VerifyBunitTest()
-    {
+    static VerifyBunitTest() =>
         VerifyBunit.Initialize();
-    }
 
     [Fact]
     public Task RenderCounter_Web()
