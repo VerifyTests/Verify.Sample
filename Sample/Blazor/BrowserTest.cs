@@ -11,7 +11,6 @@ public class BrowserTest :
         page = fixture.Page;
 
     [Fact]
-    [Trait("Category", "Integration")]
     public async Task Index()
     {
         await page.GotoAsync("http://localhost:5000/");
@@ -21,7 +20,6 @@ public class BrowserTest :
     }
 
     [Fact]
-    [Trait("Category", "Integration")]
     public async Task Counter()
     {
         await page.GotoAsync("http://localhost:5000/counter");
