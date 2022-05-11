@@ -103,7 +103,6 @@ END;");
     {
         using var command = connection.CreateCommand();
         command.CommandText = "select Value from MyTable";
-        var value = command.ExecuteScalar();
-        return (int)value!;
+        return (int) command.ExecuteScalar();
     }
 }

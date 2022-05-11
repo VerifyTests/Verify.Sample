@@ -2,6 +2,6 @@
 public class SimpleUsage
 {
     [Fact]
-    public async Task VerifyString() =>
-        await Verify("TheValue");
+    public Task VerifyString() =>
+        Verify("TheValue");
 }

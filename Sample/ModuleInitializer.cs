@@ -13,11 +13,9 @@ public static class ModuleInitializer
         {
             settings.IgnoreMembers(
                 "traceparent",
-                "Traceparent",
                 "X-Amzn-Trace-Id",
                 "origin",
-                "Content-Length",
-                "TrailingHeaders");
+                "Content-Length");
         });
     }
 }
