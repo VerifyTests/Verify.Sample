@@ -39,6 +39,7 @@ public class EntityFrameworkTests
                         serializer =>
                             serializer.TypeNameHandling = TypeNameHandling.Objects));
     }
+
     [Fact]
     public async Task Recording()
     {
