@@ -6,40 +6,63 @@
 At any time ask questions
 
 
-# Traditional Snapshot
+# Snapshot Flow
 
+
+## First Run
 ```mermaid
 graph LR
 run(Run test and<br/>create Received file)
-hasSnapshot{Has existing<br/>Verified file?}
-hasSnapshot-- No -->failTest
-failTest(Fail Test)
-run-->hasSnapshot
-shouldAccept{Accept new<br/>Received file?}
+failTest(Fail Test<br/>and show Diff)
+closeDiff(Close Diff)
+run-->failTest
+shouldAccept{Accept ?}
 failTest-->shouldAccept
-accept(Move Received to Verified)
+accept(Move Received<br/>to Verified)
 shouldAccept-- Yes -->accept
-discard(Discard Received)
+discard(Discard<br/>Received)
+shouldAccept-- No -->discard
+accept-->closeDiff
+discard-->closeDiff
+
+```
+
+## Subsequent run
+```mermaid
+graph LR
+run(Run test and<br/>create Received file)
+closeDiff(Close Diff)
+failTest(Fail Test<br/>and show Diff)
+run-->isSame
+shouldAccept{Accept ?}
+failTest-->shouldAccept
+accept(Move Received<br/>to Verified)
+shouldAccept-- Yes -->accept
+discard(Discard<br/>Received)
 shouldAccept-- No -->discard
 
-isSame{Compare Verified<br/>to Received}
-hasSnapshot-- Yes -->isSame
+isSame{Compare<br/>Verified +<br/>Received}
 passTest(Pass Test and<br/>discard Received)
 isSame-- Same --> passTest
 isSame-- Different --> failTest
+accept-->closeDiff
+discard-->closeDiff
 ```
 
- * install DiffEngineTray
-   dotnet tool install --global DiffEngineTray --version 6.9.1
- * install a DiffTool
+# Snapshot management
+
+* Choose a [DiffTool](https://github.com/VerifyTests/DiffEngine#supported-tools). 
+
+* [DiffEngineTray](https://github.com/VerifyTests/DiffEngine/blob/main/docs/tray.md) (Windows only), or [Rider/R# extension](https://github.com/matkoch/resharper-verify), or [via Clipboard](https://github.com/VerifyTests/Verify/blob/main/docs/clipboard.md)
+
  * Demo WinFormsAppTests from scratch
- * Nested files
- * ignore received
+ * Nested files in IDE
+ * Add `*.received.*` to [.gitignore](https://github.com/VerifyTests/Verify.Sample/blob/main/.gitignore#L8)
 
 
 # Snapshot is Serialization
 
-Snapshot testing leverage serialization. Converting a UI to an image is a form of serialization. The same serialization approach can be applied to any data.
+Snapshot testing leverages serialization. Converting a UI to an image is a form of serialization. The same serialization approach can be applied to any data.
 
  * Demo: Convert PersonBuilderTests.cs to snapshot testing
  * Scrubbers:
@@ -53,12 +76,12 @@ Snapshot testing leverage serialization. Converting a UI to an image is a form o
 
 # Converters
 
-Above samples Winforms and Sql were implemented as converters, but only output one file.
+Above samples WinForms and Sql were implemented as converters, but only output one file.
 
 Converters can output multiple files
 
 
-# Parameterised Testing
+# Parameterized Testing
 
  * file naming
  * Demo: ParamTests
@@ -70,12 +93,11 @@ Converters can output multiple files
  * Demo Http recording
 
 
-
-
 # Comparers
 
- * Winforms
+ * WinForms
  * Xaml
- * Web 
+ * Web
+
 
 ## Demo: 
