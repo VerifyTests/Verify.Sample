@@ -27,20 +27,6 @@ public class EntityFrameworkTests
     }
 
     [Fact]
-    public async Task AllData()
-    {
-        var database = await DbContextBuilder.GetDatabase("AllData");
-        var data = database.Context;
-
-        await Verify(data.AllData())
-            .ModifySerialization(
-                serialization =>
-                    serialization.AddExtraSettings(
-                        serializer =>
-                            serializer.TypeNameHandling = TypeNameHandling.Objects));
-    }
-
-    [Fact]
     public async Task Recording()
     {
         var database = await DbContextBuilder.GetDatabase("Recording");
