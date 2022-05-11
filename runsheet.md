@@ -9,7 +9,10 @@ At any time ask questions
 # Snapshot Flow
 
 
-## First Run
+## First run
+
+No existing `.verified.` file.
+
 ```mermaid
 graph LR
 run(Run test and<br/>create Received file)
@@ -28,6 +31,9 @@ discard-->closeDiff
 ```
 
 ## Subsequent run
+
+Existing `.verified.` file.
+
 ```mermaid
 graph LR
 run(Run test and<br/>create Received file)
@@ -64,9 +70,9 @@ discard-->closeDiff
 
 Snapshot testing leverages serialization. Converting a UI to an image is a form of serialization. The same serialization approach can be applied to any data.
 
- * Demo: Convert PersonBuilderTests.cs to snapshot testing
+ * Demo: Convert `PersonBuilderTests.cs` to snapshot testing
  * Scrubbers:
- * Demo: Sql Schema, Anything can be serialized
+ * Demo: Sql Schema. 
 
 
 # Global Scrubbers
@@ -78,7 +84,7 @@ Snapshot testing leverages serialization. Converting a UI to an image is a form 
 
 Above samples WinForms and Sql were implemented as converters, but only output one file.
 
-Converters can output multiple files
+Converters can output multiple files. See `BrowserTest.cs`
 
 
 # Parameterized Testing
@@ -89,8 +95,8 @@ Converters can output multiple files
 
 # Recording
 
- * Demo Sql recording
- * Demo Http recording
+ * Demo [Sql recording](https://github.com/VerifyTests/Verify.SqlServer#recording)
+ * Demo [Http recording](https://github.com/VerifyTests/Verify.http)
 
 
 # Comparers
