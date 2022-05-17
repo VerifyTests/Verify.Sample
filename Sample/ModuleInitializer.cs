@@ -9,13 +9,10 @@ public static class ModuleInitializer
         VerifyImageMagick.RegisterComparers(.01);
         VerifyImageSharp.Initialize();
 
-        VerifierSettings.ModifySerialization(settings =>
-        {
-            settings.IgnoreMembers(
+        VerifierSettings.IgnoreMembers(
                 "traceparent",
                 "X-Amzn-Trace-Id",
                 "origin",
                 "Content-Length");
-        });
     }
 }

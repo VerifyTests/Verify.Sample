@@ -11,8 +11,7 @@ public class HttpRecordingTest
         var sizeOfResponse = await MethodThatDoesHttpCalls();
 
         await Verify(sizeOfResponse)
-            .ModifySerialization(
-                x => x.IgnoreMember("Date"));
+            .IgnoreMember("Date");
     }
 
     static async Task<int> MethodThatDoesHttpCalls()
