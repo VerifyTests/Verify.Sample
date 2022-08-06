@@ -1,5 +1,4 @@
 ﻿{
   Instance: {},
-  NodeCount: 3,
-  Bytes: 111
+  NodeCount: 3
 }
