@@ -1,10 +1,12 @@
+using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
 using VerifyTests.EntityFramework;
 
 [UsesVerify]
 public class EntityFrameworkTests
 {
-    static EntityFrameworkTests() =>
+    [ModuleInitializer]
+    public static void ModuleInit() =>
         VerifyEntityFramework.Enable();
 
     [Fact]
