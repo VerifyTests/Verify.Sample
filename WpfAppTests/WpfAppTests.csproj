@@ -9,7 +9,7 @@
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="Verify.ImageMagick" Version="3.0.0-beta.2" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
-    <PackageReference Include="Verify.NUnit" Version="18.0.0-beta.6" />
+    <PackageReference Include="Verify.NUnit" Version="18.0.0-beta.8" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.0" />
     <PackageReference Include="Verify.Xaml" Version="4.0.0-beta.2" />
     <ProjectReference Include="..\WpfApp\WpfApp.csproj" />
