@@ -8,6 +8,7 @@ public static class ModuleInitializer
         VerifyHttp.Enable();
         VerifyImageMagick.RegisterComparers(.01);
         VerifyImageSharp.Initialize();
+        VerifyDiffPlex.Initialize();
 
         VerifierSettings.IgnoreMembers(
                 "traceparent",
