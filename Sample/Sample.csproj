@@ -8,7 +8,7 @@
     <PackageReference Include="EfLocalDb" Version="13.9.4" />
     <PackageReference Include="LocalDb" Version="13.9.4" />
     <PackageReference Include="Microsoft.Playwright" Version="1.25.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
     <PackageReference Include="Verify.DiffPlex" Version="2.0.0-beta.3" />
     <PackageReference Include="Verify.Http" Version="3.0.0-beta.4" />
     <PackageReference Include="Verify.SqlServer" Version="4.0.0-beta.3" />
