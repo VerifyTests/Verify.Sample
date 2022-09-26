@@ -15,13 +15,13 @@
     <PackageReference Include="Xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" PrivateAssets="all" />
     <PackageReference Include="AngleSharp" Version="0.17.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
     <PackageReference Include="Argon" Version="0.1.0-beta.18" />
     <PackageReference Include="Verify.AngleSharp" Version="4.0.0-beta.4" />
     <PackageReference Include="Verify.ImageMagick" Version="3.0.0-beta.3" />
     <PackageReference Include="Verify.EntityFramework" Version="7.0.0-beta.2" />
     <PackageReference Include="Verify.Playwright" Version="2.0.0-beta.2" />
-    <PackageReference Include="Verify.Xunit" Version="18.0.0-beta.20" />
+    <PackageReference Include="Verify.Xunit" Version="18.0.0-beta.21" />
     <PackageReference Include="Verify.Blazor" Version="9.0.0-beta.2" />
     <PackageReference Include="Verify.BUnit" Version="9.0.0-beta.2" />
     <PackageReference Include="Verify.ImageSharp" Version="4.0.0-beta.3" />
