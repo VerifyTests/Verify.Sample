@@ -24,7 +24,7 @@
     <PackageReference Include="Verify.Xunit" Version="19.9.2" />
     <PackageReference Include="Verify.Blazor" Version="10.0.1" />
     <PackageReference Include="Verify.BUnit" Version="10.0.1" />
-    <PackageReference Include="Verify.ImageSharp" Version="4.0.1" />
+    <PackageReference Include="Verify.ImageSharp" Version="4.1.0" />
     <ProjectReference Include="..\BlazorWebApp\BlazorWebApp.csproj" />
   </ItemGroup>
 </Project>
