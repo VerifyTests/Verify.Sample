@@ -5,7 +5,7 @@ public static class ModuleInitializer
     [ModuleInitializer]
     public static void Initialize()
     {
-        VerifyHttp.Enable();
+        VerifyHttp.Initialize();
         VerifyImageMagick.RegisterComparers(.01);
         VerifyImageSharp.Initialize();
         VerifyDiffPlex.Initialize();
