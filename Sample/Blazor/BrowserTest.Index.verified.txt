@@ -1,7 +1,0 @@
-﻿{
-  Width: 1280,
-  Height: 720,
-  HorizontalResolution: 96.0,
-  VerticalResolution: 96.0,
-  ResolutionUnits: PixelsPerInch
-}

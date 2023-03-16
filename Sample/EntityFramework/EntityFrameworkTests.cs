@@ -7,7 +7,7 @@ public class EntityFrameworkTests
 {
     [ModuleInitializer]
     public static void ModuleInit() =>
-        VerifyEntityFramework.Enable();
+        VerifyEntityFramework.Initialize();
 
     [Fact]
     public async Task Queryable()

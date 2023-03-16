@@ -3,20 +3,6 @@ environment:
   DOTNET_NOLOGO: true
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-init:
-  - npx playwright install
-install:
-  - ps: |
-      $certfile = Join-Path -Path (Resolve-Path ".").Path -ChildPath "cert.pfx"
-      $certPwd = "somepassword"
-      Remove-Item $certfile -ErrorAction SilentlyContinue
-      dotnet dev-certs https --clean
-      dotnet dev-certs https --export-path=$certfile --password=$certPwd --verbose
-      $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($certfile, $certPwd, "PersistKeySet")
-      $rootStore = New-Object System.Security.Cryptography.X509Certificates.X509Store("Root", "LocalMachine");
-      $rootStore.Open("ReadWrite")
-      $rootStore.Add($cert)
-      $rootStore.Close()
 build_script:
 - pwsh: |
     Invoke-WebRequest "https://dot.net/v1/dotnet-install.ps1" -OutFile "./dotnet-install.ps1"

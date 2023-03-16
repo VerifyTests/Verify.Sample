@@ -10,7 +10,7 @@ public class SqlServerTests
 
     [ModuleInitializer]
     public static void Initialize()
-        => VerifySqlServer.Enable();
+        => VerifySqlServer.Initialize();
 
     static SqlServerTests()
         =>
