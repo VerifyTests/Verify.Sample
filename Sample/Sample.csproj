@@ -13,7 +13,7 @@
     <PackageReference Include="Verify.SqlServer" Version="5.1.1" />
     <PackageReference Include="Xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.2" />
     <PackageReference Include="Argon" Version="0.7.2" />
     <PackageReference Include="Verify.AngleSharp" Version="4.3.1" />
     <PackageReference Include="Verify.ImageMagick" Version="3.2.2" />
