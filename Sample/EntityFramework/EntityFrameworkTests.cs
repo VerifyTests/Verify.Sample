@@ -43,7 +43,7 @@ public class EntityFrameworkTests
         EfRecording.StartRecording();
 
         await data.Companies
-            .Where(x => x.Content == "Title")
+            .Where(_ => _.Content == "Title")
             .ToListAsync();
 
         await Verify(data.Companies.Count());

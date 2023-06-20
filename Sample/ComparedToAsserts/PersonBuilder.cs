@@ -23,7 +23,7 @@
     };
 
     public static Person? Find(Guid id)
-        => People.SingleOrDefault(x => x.Id == id);
+        => People.SingleOrDefault(_ => _.Id == id);
 
     public static IEnumerable<Person> FindAll()
         => People;
