@@ -6,7 +6,7 @@ public static class ModuleInitializer
     public static void Initialize()
     {
         VerifyImageMagick.RegisterComparers(.05);
-        VerifyXaml.Enable();
+        VerifyXaml.Initialize();
         VerifyDiffPlex.Initialize();
     }
 }
