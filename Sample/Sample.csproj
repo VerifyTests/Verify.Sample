@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="EfLocalDb" Version="15.1.1" />
-    <PackageReference Include="LocalDb" Version="15.2.0" />
+    <PackageReference Include="LocalDb" Version="15.2.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
     <PackageReference Include="Verify.DiffPlex" Version="2.2.1" />
     <PackageReference Include="Verify.Http" Version="4.2.1" />
