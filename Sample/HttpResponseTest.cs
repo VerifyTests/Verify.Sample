@@ -6,7 +6,7 @@ public class HttpResponseTest
     [Fact]
     public async Task ImageHttpResponse()
     {
-        var result = await client.GetAsync("https://httpbin.org/image/png");
+        var result = await client.GetAsync("https://raw.githubusercontent.com/VerifyTests/Verify/main/src/icon.png");
 
         await Verify(result);
     }
@@ -14,7 +14,7 @@ public class HttpResponseTest
     [Fact]
     public async Task HttpResponse()
     {
-        var result = await client.GetAsync("https://httpbin.org/get");
+        var result = await client.GetAsync("https://raw.githubusercontent.com/VerifyTests/Verify/main/license.txt");
 
         await Verify(result);
     }

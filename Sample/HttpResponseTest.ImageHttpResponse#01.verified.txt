@@ -1,7 +1,6 @@
 ﻿{
   Width: 100,
   Height: 100,
-  HorizontalResolution: 96.0,
-  VerticalResolution: 96.0,
-  ResolutionUnits: PixelsPerInch
+  HorizontalResolution: 1200.0,
+  VerticalResolution: 1200.0
 }

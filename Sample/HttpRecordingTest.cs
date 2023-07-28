@@ -18,8 +18,8 @@ public class HttpRecordingTest
     {
         using var client = new HttpClient();
 
-        var json = await client.GetStringAsync("https://httpbin.org/json");
-        var xml = await client.GetStringAsync("https://httpbin.org/xml");
+        var json = await client.GetStringAsync("https://raw.githubusercontent.com/VerifyTests/Verify/main/src/icon.png");
+        var xml = await client.GetStringAsync("https://raw.githubusercontent.com/VerifyTests/Verify/main/license.txt");
         return json.Length + xml.Length;
     }
 }
