@@ -14,8 +14,8 @@ public class SampleDbContext :
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Company>()
-            .HasMany(c => c.Employees)
-            .WithOne(e => e.Company)
+            .HasMany(_ => _.Employees)
+            .WithOne(_ => _.Company)
             .IsRequired();
         modelBuilder.Entity<Employee>();
     }
