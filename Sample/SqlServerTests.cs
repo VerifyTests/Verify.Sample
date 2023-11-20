@@ -91,11 +91,11 @@ public class SqlServerTests
 
     [Fact]
     [Trait("Category", "Integration")]
-    public async Task Recording()
+    public async Task RecordingUsage()
     {
         await using var database = await sqlInstance.Build();
 
-        SqlRecording.StartRecording();
+        Recording.Start();
         var value = MethodUnderTest(database.Connection);
         await Verify(value);
     }

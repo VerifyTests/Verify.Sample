@@ -1,12 +1,10 @@
-﻿using VerifyTests.Http;
-
-[UsesVerify]
+﻿[UsesVerify]
 public class HttpRecordingTest
 {
     [Fact]
     public async Task TestHttpRecording()
     {
-        HttpRecording.StartRecording();
+        Recording.Start();
 
         var sizeOfResponse = await MethodThatDoesHttpCalls();
 

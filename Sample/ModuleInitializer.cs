@@ -1,5 +1,4 @@
 ﻿using System.Runtime.CompilerServices;
-using VerifyTests.Http;
 
 public static class ModuleInitializer
 {
@@ -10,7 +9,6 @@ public static class ModuleInitializer
         VerifyImageMagick.RegisterComparers(.01);
         VerifyImageSharp.Initialize();
         VerifyDiffPlex.Initialize();
-        HttpRecording.Enable();
         VerifierSettings.IgnoreMembers(
             "Content-Length",
             "traceparent",

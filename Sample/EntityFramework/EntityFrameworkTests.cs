@@ -1,6 +1,5 @@
 using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
-using VerifyTests.EntityFramework;
 
 [UsesVerify]
 public class EntityFrameworkTests
@@ -28,7 +27,7 @@ public class EntityFrameworkTests
     }
 
     [Fact]
-    public async Task Recording()
+    public async Task RecordingUsage()
     {
         var database = await DbContextBuilder.GetDatabase("Recording");
         var data = database.Context;
@@ -40,7 +39,7 @@ public class EntityFrameworkTests
         data.Add(company);
         await data.SaveChangesAsync();
 
-        EfRecording.StartRecording();
+        Recording.Start();
 
         await data.Companies
             .Where(_ => _.Content == "Title")
