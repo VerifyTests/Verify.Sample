@@ -89,7 +89,6 @@ public class SqlServerTests
     }
 
     [Fact]
-    [Trait("Category", "Integration")]
     public async Task RecordingUsage()
     {
         await using var database = await sqlInstance.Build();
