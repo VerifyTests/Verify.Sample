@@ -1,16 +1,9 @@
-﻿class Address
+﻿class Address(
+    string street,
+    string city,
+    string state)
 {
-    public string Street { get; }
-    public string City { get; }
-    public string State { get; }
-
-    public Address(
-        string street,
-        string city,
-        string state)
-    {
-        Street = street;
-        City = city;
-        State = state;
-    }
+    public string Street { get; } = street;
+    public string City { get; } = city;
+    public string State { get; } = state;
 }

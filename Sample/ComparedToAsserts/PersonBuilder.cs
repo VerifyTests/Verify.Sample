@@ -1,7 +1,7 @@
 ﻿class PersonBuilder
 {
-    public static List<Person> People = new()
-    {
+    public static List<Person> People =
+    [
         new(
             Id: new("ebced679-45d3-4653-8791-3d969c4a986c"),
             GivenNames: "Emmy",
@@ -11,6 +11,7 @@
                 street: "924 Jehovah Drive",
                 city: "Strasburg",
                 state: "Virginia")),
+
         new(
             Id: new("7e6e1c62-92f2-4b64-8a85-988107458606"),
             GivenNames: "Javed",
@@ -20,7 +21,7 @@
                 street: "1587 Elliott Street",
                 city: "Manchester",
                 state: "New Hampshire"))
-    };
+    ];
 
     public static Person? Find(Guid id)
         => People.SingleOrDefault(_ => _.Id == id);

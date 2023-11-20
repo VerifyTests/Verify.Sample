@@ -1,7 +1,8 @@
 ﻿{
   target: 4009,
-  httpCalls: [
+  httpCall: [
     {
+      Status: Created,
       Request: {
         Uri: https://raw.githubusercontent.com/VerifyTests/Verify/main/src/icon.png,
         Headers: {}
@@ -30,6 +31,7 @@
       }
     },
     {
+      Status: Created,
       Request: {
         Uri: https://raw.githubusercontent.com/VerifyTests/Verify/main/license.txt,
         Headers: {}
