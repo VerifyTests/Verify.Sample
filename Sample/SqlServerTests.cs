@@ -79,7 +79,6 @@ public class SqlServerTests
         => File.GetLastWriteTime(path);
 
     [Fact]
-    [Trait("Category", "Integration")]
     public async Task SqlServerSchema()
     {
         await using var database = await sqlInstance.Build();
