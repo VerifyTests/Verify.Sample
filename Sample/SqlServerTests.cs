@@ -12,8 +12,7 @@ public class SqlServerTests
     public static void Initialize()
         => VerifySqlServer.Initialize();
 
-    static SqlServerTests()
-        =>
+    static SqlServerTests() =>
         sqlInstance = new(
             "VerifySqlServer",
             connection =>
