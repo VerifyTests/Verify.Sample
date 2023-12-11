@@ -19,6 +19,6 @@
     <PackageReference Include="Verify.ImageMagick" Version="3.2.2" />
     <PackageReference Include="Verify.Xunit" Version="22.8.0" />
     <PackageReference Include="Verify.EntityFramework" Version="12.1.0" />
-    <PackageReference Include="Verify.ImageSharp" Version="4.2.0" />
+    <PackageReference Include="Verify.ImageSharp" Version="4.3.0" />
   </ItemGroup>
 </Project>
