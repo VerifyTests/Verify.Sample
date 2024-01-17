@@ -1,5 +1,4 @@
-﻿[UsesVerify]
-public class ParamTest
+﻿public class ParamTest
 {
     [Theory]
     [InlineData("Value1")]

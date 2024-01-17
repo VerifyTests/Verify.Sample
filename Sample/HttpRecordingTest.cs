@@ -1,5 +1,4 @@
-﻿[UsesVerify]
-public class HttpRecordingTest
+﻿public class HttpRecordingTest
 {
     [Fact]
     public async Task TestHttpRecording()

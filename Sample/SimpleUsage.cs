@@ -1,5 +1,4 @@
-﻿[UsesVerify]
-public class SimpleUsage
+﻿public class SimpleUsage
 {
     [Fact]
     public Task VerifyString() =>

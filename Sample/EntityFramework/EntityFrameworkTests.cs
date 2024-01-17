@@ -1,7 +1,6 @@
 using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
 
-[UsesVerify]
 public class EntityFrameworkTests
 {
     [ModuleInitializer]

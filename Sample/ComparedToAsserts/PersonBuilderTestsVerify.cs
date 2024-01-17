@@ -1,5 +1,4 @@
-﻿[UsesVerify]
-public class PersonBuilderTestsVerify
+﻿public class PersonBuilderTestsVerify
 {
     static VerifySettings verifySettings;
 

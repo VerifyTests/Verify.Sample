@@ -1,5 +1,4 @@
-﻿[UsesVerify]
-public class HttpResponseTest
+﻿public class HttpResponseTest
 {
     static HttpClient client = new();
 

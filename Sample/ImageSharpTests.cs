@@ -1,7 +1,6 @@
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 
-[UsesVerify]
 public class ImageSharpTests
 {
     [Fact]
