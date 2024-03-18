@@ -6,7 +6,6 @@ public static class ModuleInitializer
     public static void Initialize()
     {
         VerifyImageMagick.RegisterComparers(.4);
-        VerifyWinForms.Enable();
-        VerifyDiffPlex.Initialize();
+        VerifierSettings.InitializePlugins();
     }
 }
