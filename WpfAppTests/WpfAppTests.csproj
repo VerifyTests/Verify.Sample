@@ -5,13 +5,13 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="4.1.0" />
-    <PackageReference Include="Verify.DiffPlex" Version="3.0.0" />
-    <PackageReference Include="Verify.ImageMagick" Version="3.4.2" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
-    <PackageReference Include="Verify.Nunit" Version="24.2.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
-    <PackageReference Include="Verify.Xaml" Version="4.1.0" />
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="Verify.DiffPlex" />
+    <PackageReference Include="Verify.ImageMagick" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="Verify.Nunit" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Verify.Xaml" />
     <ProjectReference Include="..\WpfApp\WpfApp.csproj" />
   </ItemGroup>
 </Project>
