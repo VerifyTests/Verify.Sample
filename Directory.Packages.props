@@ -14,7 +14,7 @@
     <PackageVersion Include="Verify.DiffPlex" Version="3.0.0" />
     <PackageVersion Include="Verify.EntityFramework" Version="12.1.1" />
     <PackageVersion Include="Verify.Http" Version="6.2.1" />
-    <PackageVersion Include="Verify.ImageMagick" Version="3.4.2" />
+    <PackageVersion Include="Verify.ImageMagick" Version="3.4.4" />
     <PackageVersion Include="Verify.ImageSharp" Version="4.3.2" />
     <PackageVersion Include="Verify.Nunit" Version="25.0.2" />
     <PackageVersion Include="Verify.SqlServer" Version="8.0.5" />
