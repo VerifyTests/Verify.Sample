@@ -2,17 +2,17 @@
   target: 5,
   sql: [
     {
-      HasTransaction: false,
       Text:
 SELECT [c].[Id], [c].[Content]
 FROM [Companies] AS [c]
-WHERE [c].[Content] = N'Title'
+WHERE [c].[Content] = N'Title',
+      HasTransaction: false
     },
     {
-      HasTransaction: false,
       Text:
 SELECT COUNT(*)
-FROM [Companies] AS [c]
+FROM [Companies] AS [c],
+      HasTransaction: false
     }
   ],
   ef: [

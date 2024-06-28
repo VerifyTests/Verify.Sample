@@ -1,5 +1,8 @@
-﻿-- Tables
+﻿## Tables
 
+### MyTable
+
+```sql
 CREATE TABLE [dbo].[MyTable](
 	[Value] [int] NULL
 ) ON [PRIMARY]
@@ -14,19 +17,25 @@ ON MyTable
 AS RAISERROR ('Notify Customer Relations', 16, 10);
 
 ALTER TABLE [dbo].[MyTable] ENABLE TRIGGER [MyTrigger]
+```
 
+## Views
 
--- Views
+### MyView
 
+```sql
 CREATE VIEW MyView
 AS
   SELECT Value
   FROM MyTable
   WHERE (Value > 10);
+```
 
+## StoredProcedures
 
--- StoredProcedures
+### MyProcedure
 
+```sql
 CREATE PROCEDURE MyProcedure
 AS
 BEGIN
@@ -35,10 +44,13 @@ BEGIN
   FROM MyTable
   WHERE (Value > 10);
 END;
+```
 
+## UserDefinedFunctions
 
--- UserDefinedFunctions
+### MyFunction
 
+```sql
 CREATE FUNCTION MyFunction(
   @quantity INT,
   @list_price DEC(10,2),
@@ -49,8 +61,12 @@ AS
 BEGIN
     RETURN @quantity * @list_price * (1 - @discount);
 END;
+```
 
+## Synonyms
 
--- Synonyms
+### synonym1
 
+```sql
 CREATE SYNONYM [dbo].[synonym1] FOR [MyTable]
+```
