@@ -22,6 +22,6 @@
     <PackageVersion Include="Verify.Xaml" Version="4.1.0" />
     <PackageVersion Include="Verify.Xunit" Version="25.3.0" />
     <PackageVersion Include="Xunit" Version="2.8.1" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.1" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
   </ItemGroup>
 </Project>
