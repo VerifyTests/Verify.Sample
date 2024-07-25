@@ -19,5 +19,7 @@
     <PackageReference Include="Verify.Xunit" />
     <PackageReference Include="Verify.EntityFramework" />
     <PackageReference Include="Verify.ImageSharp" />
+    <PackageReference Include="Azure.Identity" />
+    <PackageReference Include="System.Text.Json" />
   </ItemGroup>
 </Project>
