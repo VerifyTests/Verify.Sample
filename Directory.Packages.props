@@ -20,7 +20,7 @@
     <PackageVersion Include="Verify.SqlServer" Version="9.0.1" />
     <PackageVersion Include="Verify.WinForms" Version="4.0.0" />
     <PackageVersion Include="Verify.Xaml" Version="4.1.0" />
-    <PackageVersion Include="Verify.Xunit" Version="26.1.2" />
+    <PackageVersion Include="Verify.Xunit" Version="26.1.5" />
     <PackageVersion Include="Xunit" Version="2.9.0" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
     <!-- explicit to avoid CVE -->
