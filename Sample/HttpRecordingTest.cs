@@ -8,7 +8,7 @@
         var sizeOfResponse = await MethodThatDoesHttpCalls();
 
         await Verify(sizeOfResponse)
-            .IgnoreMember("Date");
+            .IgnoreMembers("Date", "Expires");
     }
 
     static async Task<int> MethodThatDoesHttpCalls()

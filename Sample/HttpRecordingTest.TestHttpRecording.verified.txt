@@ -25,8 +25,7 @@
           X-XSS-Protection: 1; mode=block
         },
         ContentHeaders: {
-          Content-Type: image/png,
-          Expires: DateTime_1
+          Content-Type: image/png
         }
       }
     },
@@ -54,8 +53,7 @@
           X-XSS-Protection: 1; mode=block
         },
         ContentHeaders: {
-          Content-Type: text/plain; charset=utf-8,
-          Expires: DateTime_2
+          Content-Type: text/plain; charset=utf-8
         },
         ContentString:
 MIT License
