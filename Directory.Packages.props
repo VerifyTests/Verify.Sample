@@ -20,9 +20,11 @@
     <PackageVersion Include="Verify.SqlServer" Version="10.0.0" />
     <PackageVersion Include="Verify.WinForms" Version="4.0.0" />
     <PackageVersion Include="Verify.Xaml" Version="4.1.0" />
-    <PackageVersion Include="Verify.XunitV3" Version="26.5.0-beta.1" />
-    <PackageVersion Include="xunit.v3" Version="0.3.0-pre.18" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="3.0.0-pre.30" />
+    <PackageVersion Include="Verify.Xunit" Version="26.5.0" />
+    <PackageVersion Include="Xunit" Version="2.9.0" />
+    <PackageVersion Include="xunit.abstractions" Version="2.0.3" />
+    <PackageVersion Include="xunit.extensibility.execution" Version="2.9.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
     <!-- explicit to avoid CVE -->
     <PackageVersion Include="System.Text.Json" Version="8.0.4" />
   </ItemGroup>
