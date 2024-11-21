@@ -1,4 +1,4 @@
-﻿<MainWindow Title="MainWindow" Width="525" Height="350" xmlns="clr-namespace:WpfApp;assembly=WpfApp" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+﻿<MainWindow ThemeMode="None" Title="MainWindow" Width="525" Height="350" xmlns="clr-namespace:WpfApp;assembly=WpfApp" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
   <av:DockPanel Background="#FFF0FFFF" Name="MyPanel">
     <av:Menu Height="26" av:DockPanel.Dock="Top">
       <av:MenuItem Header="File">
