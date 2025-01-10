@@ -21,9 +21,9 @@
     <PackageVersion Include="Verify.WinForms" Version="4.0.0" />
     <PackageVersion Include="Verify.Xaml" Version="4.1.0" />
     <PackageVersion Include="Verify.Xunit" Version="28.8.1" />
-    <PackageVersion Include="Xunit" Version="2.9.2" />
+    <PackageVersion Include="Xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.abstractions" Version="2.0.3" />
-    <PackageVersion Include="xunit.extensibility.execution" Version="2.9.2" />
+    <PackageVersion Include="xunit.extensibility.execution" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.0.0" />
     <!-- explicit to avoid CVE -->
     <PackageVersion Include="System.Text.Json" Version="9.0.0" />
