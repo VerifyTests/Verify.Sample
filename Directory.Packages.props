@@ -17,7 +17,7 @@
     <PackageVersion Include="Verify.ImageMagick" Version="3.6.0" />
     <PackageVersion Include="Verify.ImageSharp" Version="4.3.4" />
     <PackageVersion Include="Verify.Nunit" Version="28.14.1" />
-    <PackageVersion Include="Verify.SqlServer" Version="11.0.1" />
+    <PackageVersion Include="Verify.SqlServer" Version="11.1.1" />
     <PackageVersion Include="Verify.WinForms" Version="4.0.0" />
     <PackageVersion Include="Verify.Xaml" Version="4.1.0" />
     <PackageVersion Include="Verify.Xunit" Version="28.14.1" />
