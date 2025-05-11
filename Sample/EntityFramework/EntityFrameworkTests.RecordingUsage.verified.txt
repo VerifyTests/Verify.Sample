@@ -3,15 +3,16 @@
   sql: [
     {
       Text:
-SELECT [c].[Id], [c].[Content]
-FROM [Companies] AS [c]
-WHERE [c].[Content] = N'Title',
+select c.Id,
+       c.Content
+from   Companies as c
+where  c.Content = N'Title',
       HasTransaction: false
     },
     {
       Text:
-SELECT COUNT(*)
-FROM [Companies] AS [c],
+select COUNT(*)
+from   Companies as c,
       HasTransaction: false
     }
   ],
@@ -20,16 +21,17 @@ FROM [Companies] AS [c],
       Type: ReaderExecutedAsync,
       HasTransaction: false,
       Text:
-SELECT [c].[Id], [c].[Content]
-FROM [Companies] AS [c]
-WHERE [c].[Content] = N'Title'
+select c.Id,
+       c.Content
+from   Companies as c
+where  c.Content = N'Title'
     },
     {
       Type: ReaderExecuted,
       HasTransaction: false,
       Text:
-SELECT COUNT(*)
-FROM [Companies] AS [c]
+select COUNT(*)
+from   Companies as c
     }
   ]
 }
