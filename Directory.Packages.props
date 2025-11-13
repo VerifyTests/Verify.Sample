@@ -16,12 +16,12 @@
     <PackageVersion Include="Verify.Http" Version="7.0.0" />
     <PackageVersion Include="Verify.ImageMagick" Version="3.8.0" />
     <PackageVersion Include="Verify.ImageSharp" Version="4.4.1" />
-    <PackageVersion Include="Verify.Nunit" Version="31.6.1" />
+    <PackageVersion Include="Verify.Nunit" Version="31.7.0" />
     <PackageVersion Include="Verify.SqlServer" Version="11.2.0" />
     <PackageVersion Include="Verify.SystemJson" Version="1.4.1" />
     <PackageVersion Include="Verify.WinForms" Version="4.0.0" />
     <PackageVersion Include="Verify.Xaml" Version="4.2.0" />
-    <PackageVersion Include="Verify.Xunit" Version="31.6.1" />
+    <PackageVersion Include="Verify.Xunit" Version="31.7.0" />
     <PackageVersion Include="Xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.abstractions" Version="2.0.3" />
     <PackageVersion Include="xunit.extensibility.execution" Version="2.9.3" />
