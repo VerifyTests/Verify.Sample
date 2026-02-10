@@ -6,7 +6,7 @@
   <ItemGroup>
     <PackageVersion Include="LocalDb" Version="23.4.3" />
     <PackageVersion Include="EfLocalDb" Version="23.4.3" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.2" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
     <PackageVersion Include="NUnit" Version="4.4.0" />
     <PackageVersion Include="NUnit3TestAdapter" Version="6.1.0" />
@@ -16,18 +16,18 @@
     <PackageVersion Include="Verify.Http" Version="7.5.1" />
     <PackageVersion Include="Verify.ImageMagick" Version="3.8.3" />
     <PackageVersion Include="Verify.ImageSharp" Version="4.4.1" />
-    <PackageVersion Include="Verify.Nunit" Version="31.12.3" />
+    <PackageVersion Include="Verify.Nunit" Version="31.12.4" />
     <PackageVersion Include="Verify.SqlServer" Version="11.3.1" />
     <PackageVersion Include="Verify.SystemJson" Version="1.4.1" />
     <PackageVersion Include="Verify.WinForms" Version="4.0.0" />
     <PackageVersion Include="Verify.Xaml" Version="4.2.0" />
-    <PackageVersion Include="Verify.Xunit" Version="31.12.3" />
+    <PackageVersion Include="Verify.Xunit" Version="31.12.4" />
     <PackageVersion Include="Xunit" Version="2.9.3" />
     <PackageVersion Include="xunit.abstractions" Version="2.0.3" />
     <PackageVersion Include="xunit.extensibility.execution" Version="2.9.3" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
     <PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.5" />
     <!-- explicit to avoid CVE -->
-    <PackageVersion Include="System.Text.Json" Version="10.0.2" />
+    <PackageVersion Include="System.Text.Json" Version="10.0.3" />
   </ItemGroup>
 </Project>
