@@ -10,6 +10,11 @@
     <PackageReference Include="Verify.ImageMagick" />
     <PackageReference Include="NUnit3TestAdapter" />
     <PackageReference Include="Verify.Nunit" />
+    <PackageReference Include="Argon" />
+    <PackageReference Include="DiffEngine" />
+    <PackageReference Include="EmptyFiles" />
+    <PackageReference Include="SimpleInfoName" />
+    <PackageReference Include="Verify" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="Verify.Xaml" />
     <ProjectReference Include="..\WpfApp\WpfApp.csproj" />
