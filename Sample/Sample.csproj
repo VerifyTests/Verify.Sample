@@ -12,7 +12,6 @@
     <PackageReference Include="Verify.SqlServer" />
     <PackageReference Include="Verify.SystemJson" />
     <PackageReference Include="xunit.v3" />
-    <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="Verify.XunitV3" />
     <PackageReference Include="Argon" />
