@@ -16,7 +16,7 @@
     <PackageVersion Include="Verify.Http" Version="7.5.1" />
     <PackageVersion Include="Verify.ImageMagick" Version="3.8.8" />
     <PackageVersion Include="Verify.ImageSharp" Version="5.0.1" />
-    <PackageVersion Include="Verify.Nunit" Version="31.19.1" />
+    <PackageVersion Include="Verify.Nunit" Version="31.20.0" />
     <PackageVersion Include="Verify.SqlServer" Version="12.1.2" />
     <PackageVersion Include="Verify.SystemJson" Version="1.4.1" />
     <PackageVersion Include="Verify.WinForms" Version="4.0.0" />
@@ -32,6 +32,6 @@
     <PackageVersion Include="DiffEngine" Version="19.2.0" />
     <PackageVersion Include="EmptyFiles" Version="8.18.1" />
     <PackageVersion Include="SimpleInfoName" Version="3.2.0" />
-    <PackageVersion Include="Verify" Version="31.19.1" />
+    <PackageVersion Include="Verify" Version="31.20.0" />
   </ItemGroup>
 </Project>
