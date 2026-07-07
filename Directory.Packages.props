@@ -19,7 +19,7 @@
     <PackageVersion Include="Verify.Nunit" Version="31.20.0" />
     <PackageVersion Include="Verify.SqlServer" Version="12.1.2" />
     <PackageVersion Include="Verify.SystemJson" Version="1.4.1" />
-    <PackageVersion Include="Verify.WinForms" Version="4.0.0" />
+    <PackageVersion Include="Verify.WinForms" Version="5.0.1" />
     <PackageVersion Include="Verify.Xaml" Version="4.2.1" />
     <PackageVersion Include="Verify.XunitV3" Version="31.20.0" />
     <PackageVersion Include="xunit.v3" Version="3.2.2" />
