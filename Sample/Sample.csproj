@@ -24,6 +24,5 @@
     <PackageReference Include="Verify.ImageMagick" />
     <PackageReference Include="Verify.EntityFramework" />
     <PackageReference Include="Verify.ImageSharp" />
-    <PackageReference Include="System.Text.Json" />
   </ItemGroup>
 </Project>
