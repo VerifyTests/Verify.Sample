@@ -15,6 +15,7 @@ public static class ModuleInitializer
             "Traceparent",
             "X-Amzn-Trace-Id",
             "X-GitHub-Request-Id",
+            "x-github-edge-region",
             "origin",
             "Date",
             "Server",
