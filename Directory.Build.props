@@ -1,6 +1,7 @@
 
 <Project>
   <PropertyGroup>
+    <NoWarn>SC023</NoWarn>
     <Nullable>enable</Nullable>
     <LangVersion>preview</LangVersion>
     <RunAnalyzers>false</RunAnalyzers>
@@ -8,5 +9,6 @@
     <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
     <RunAnalyzersDuringLiveAnalysis>false</RunAnalyzersDuringLiveAnalysis>
     <ResolveAssemblyReferencesSilent>true</ResolveAssemblyReferencesSilent>
+    <Verify_SponsorshipLicenseIgnored>true</Verify_SponsorshipLicenseIgnored>
   </PropertyGroup>
 </Project>
