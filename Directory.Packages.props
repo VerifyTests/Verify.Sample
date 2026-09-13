@@ -16,16 +16,16 @@
     <PackageVersion Include="Verify.Http" Version="7.5.1" />
     <PackageVersion Include="Verify.ImageMagick" Version="3.10.0" />
     <PackageVersion Include="Verify.ImageSharp" Version="5.0.1" />
-    <PackageVersion Include="Verify.Nunit" Version="33.0.0-beta.11" />
+    <PackageVersion Include="Verify.Nunit" Version="33.0.0" />
     <PackageVersion Include="Verify.SqlServer" Version="12.2.0" />
     <PackageVersion Include="Verify.SystemJson" Version="1.4.1" />
     <PackageVersion Include="Verify.WinForms" Version="6.0.0" />
     <PackageVersion Include="Verify.Xaml" Version="5.0.0" />
-    <PackageVersion Include="Verify.XunitV3" Version="33.0.0-beta.11" />
-    <PackageVersion Include="xunit.v3" Version="4.0.0" />
+    <PackageVersion Include="Verify.XunitV3" Version="33.0.0" />
+    <PackageVersion Include="xunit.v3" Version="4.0.1" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.0" />
     <PackageVersion Include="xunit.abstractions" Version="2.0.3" />
-    <PackageVersion Include="xunit.v3.extensibility.core" Version="4.0.0" />
+    <PackageVersion Include="xunit.v3.extensibility.core" Version="4.0.1" />
     <PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.5" />
     <!-- transitive pin to avoid CVE. no direct PackageReference: net10.0 supplies it in the shared framework -->
     <PackageVersion Include="System.Text.Json" Version="10.0.12" />
@@ -33,6 +33,6 @@
     <PackageVersion Include="DiffEngine" Version="20.3.1" />
     <PackageVersion Include="EmptyFiles" Version="8.18.2" />
     <PackageVersion Include="SimpleInfoName" Version="3.2.0" />
-    <PackageVersion Include="Verify" Version="33.0.0-beta.11" />
+    <PackageVersion Include="Verify" Version="33.0.0" />
   </ItemGroup>
 </Project>
