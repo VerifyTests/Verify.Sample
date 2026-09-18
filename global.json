@@ -4,6 +4,9 @@
     "allowPrerelease": true,
     "rollForward": "latestFeature"
   },
+  "test": {
+    "runner": "Microsoft.Testing.Platform"
+  },
   "msbuild-sdks": {
     "MSBuild.Sdk.Extras": "3.0.44"
   }

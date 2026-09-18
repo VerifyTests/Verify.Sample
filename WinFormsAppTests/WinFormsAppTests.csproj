@@ -2,6 +2,8 @@
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>Exe</OutputType>
+    <EnableNUnitRunner>true</EnableNUnitRunner>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" />
@@ -15,7 +17,6 @@
     <PackageReference Include="SimpleInfoName" />
     <PackageReference Include="Verify" VersionOverride="33.0.1" />
     <PackageReference Include="Verify.ImageMagick" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <ProjectReference Include="..\WinFormsApp\WinFormsApp.csproj" />
   </ItemGroup>
 </Project>
