@@ -7,10 +7,6 @@
     <PackageVersion Include="LocalDb" Version="26.2.0" />
     <PackageVersion Include="EfLocalDb" Version="26.2.0" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.12" />
-<<<<<<< HEAD
-=======
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
->>>>>>> 1d6277dc7600ad64bee9e92ff7411ba2ae4458ef
     <PackageVersion Include="NUnit" Version="4.6.1" />
     <PackageVersion Include="NUnit3TestAdapter" Version="6.3.0" />
     <PackageVersion Include="Verify.AngleSharp" Version="5.1.2" />
