@@ -13,12 +13,12 @@
     <PackageReference Include="Verify.SqlServer" />
     <PackageReference Include="Verify.SystemJson" />
     <PackageReference Include="xunit.v3" />
-    <PackageReference Include="Verify.XunitV3" VersionOverride="33.0.1" />
+    <PackageReference Include="Verify.XunitV3" VersionOverride="33.1.4" />
     <PackageReference Include="Argon" />
     <PackageReference Include="DiffEngine" />
     <PackageReference Include="EmptyFiles" />
     <PackageReference Include="SimpleInfoName" />
-    <PackageReference Include="Verify" VersionOverride="33.0.1" />
+    <PackageReference Include="Verify" VersionOverride="33.1.4" />
     <PackageReference Include="Verify.AngleSharp" />
     <PackageReference Include="Verify.ImageMagick" />
     <PackageReference Include="Verify.EntityFramework" />
