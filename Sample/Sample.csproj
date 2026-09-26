@@ -13,7 +13,7 @@
     <PackageReference Include="Verify.SqlServer" />
     <PackageReference Include="Verify.SystemJson" />
     <PackageReference Include="xunit.v3" />
-    <PackageReference Include="Verify.XunitV3" VersionOverride="33.1.4" />
+    <PackageReference Include="Verify.XunitV3" VersionOverride="33.1.5" />
     <PackageReference Include="Argon" />
     <PackageReference Include="DiffEngine" />
     <PackageReference Include="EmptyFiles" />
