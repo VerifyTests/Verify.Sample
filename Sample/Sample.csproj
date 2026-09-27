@@ -18,7 +18,7 @@
     <PackageReference Include="DiffEngine" />
     <PackageReference Include="EmptyFiles" />
     <PackageReference Include="SimpleInfoName" />
-    <PackageReference Include="Verify" VersionOverride="33.1.4" />
+    <PackageReference Include="Verify" VersionOverride="33.1.5" />
     <PackageReference Include="Verify.AngleSharp" />
     <PackageReference Include="Verify.ImageMagick" />
     <PackageReference Include="Verify.EntityFramework" />
