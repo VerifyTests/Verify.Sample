@@ -7,6 +7,5 @@ public static class ModuleInitializer
     {
         VerifyImageMagick.RegisterComparers(.05);
         VerifyXaml.Initialize();
-        VerifyDiffPlex.Initialize();
     }
 }
