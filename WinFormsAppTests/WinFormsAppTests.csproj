@@ -9,12 +9,12 @@
     <PackageReference Include="NUnit" />
     <PackageReference Include="Verify.WinForms" />
     <PackageReference Include="NUnit3TestAdapter" />
-    <PackageReference Include="Verify.Nunit" VersionOverride="33.3.1" />
+    <PackageReference Include="Verify.Nunit" VersionOverride="33.3.2" />
     <PackageReference Include="Argon" />
     <PackageReference Include="DiffEngine" />
     <PackageReference Include="EmptyFiles" />
     <PackageReference Include="SimpleInfoName" />
-    <PackageReference Include="Verify" VersionOverride="33.3.1" />
+    <PackageReference Include="Verify" VersionOverride="33.3.2" />
     <PackageReference Include="Verify.ImageMagick" />
     <ProjectReference Include="..\WinFormsApp\WinFormsApp.csproj" />
   </ItemGroup>
