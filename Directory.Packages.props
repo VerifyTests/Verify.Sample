@@ -12,7 +12,7 @@
     <PackageVersion Include="Verify.AngleSharp" Version="5.1.2" />
     <PackageVersion Include="Verify.EntityFramework" Version="16.2.0" />
     <PackageVersion Include="Verify.Http" Version="8.0.1" />
-    <PackageVersion Include="Verify.ImageMagick" Version="4.0.0" />
+    <PackageVersion Include="Verify.ImageMagick" Version="4.1.0" />
     <PackageVersion Include="Verify.ImageSharp" Version="5.1.0" />
     <PackageVersion Include="Verify.Nunit" Version="33.3.4" />
     <PackageVersion Include="Verify.SqlServer" Version="12.4.0" />
