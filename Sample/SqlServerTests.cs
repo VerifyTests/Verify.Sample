@@ -16,8 +16,7 @@ public class SqlServerTests
             "VerifySqlServer",
             connection =>
             {
-                var sqlConnection = (SqlConnection) connection;
-                var server = new Server(new ServerConnection(sqlConnection));
+                var server = new Server(new ServerConnection(connection));
                 server.ConnectionContext.ExecuteNonQuery(
                     """
                     CREATE TABLE
